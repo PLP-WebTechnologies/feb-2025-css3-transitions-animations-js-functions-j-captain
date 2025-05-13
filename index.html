@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captain's Tech - Electronics Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Captain's Tech</h1>
+            <nav>
+                <h3>Change web theme</h3>
+                <button id="themeToggle">🌓</button>
+                <button class="cart-counter" id="cartCounter" aria-label="Open cart">
+                    0
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="categories" id="categories"></div>
+        <div class="products-grid" id="productsGrid"></div>
+    </main>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Your Cart (<span id="cartCountModal">0</span>)</h2>
+            <div class="cart-items" id="cartItemsContainer">
+                <div class="cart-empty visible">Your cart is empty</div>
+            </div>
+            <p class="cart-total">Total: $<span id="cartTotal">0.00</span></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Captain's Tech - All rights reserved</p>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
